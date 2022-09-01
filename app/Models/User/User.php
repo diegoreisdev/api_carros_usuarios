@@ -6,6 +6,7 @@ namespace App\Models\User;
 
 use App\Models\Cars\Cars;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
  * Class User
@@ -13,6 +14,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 class User extends Model
 {
+    use SoftDeletes;
     /**
      * @var string
      */

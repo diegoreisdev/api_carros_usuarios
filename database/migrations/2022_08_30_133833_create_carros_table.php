@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('marca', 20);
             $table->string('cor', 20);
             $table->string('ano');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
